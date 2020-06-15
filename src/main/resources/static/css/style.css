@@ -1,0 +1,10 @@
+.brand-name{
+	text-align: center;
+	background: #DDD;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+.brand-name a{
+	text-decoration: none;
+	font-weight: bold;
+}

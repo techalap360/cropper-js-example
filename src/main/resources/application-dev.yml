@@ -1,0 +1,39 @@
+server:
+  servlet:
+    context-path: /
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+spring:
+  application:
+    name: cropper-js-example
+  thymeleaf:
+    cache: false
+  datasource: 
+    initialization-mode: never
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cropper-js-example
+    username: postgres
+    password: postgres
+    tomcat:
+      max-wait: 20000
+      max-active: 50
+      max-idle: 20
+      min-idle: 15
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        id:
+          new_generator_mappings: false
+  jackson:
+    serialization:
+      indent-output: true
+  banner:
+    location: techalap360.txt

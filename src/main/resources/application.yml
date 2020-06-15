@@ -1,0 +1,14 @@
+spring:  
+  profiles:
+    active: dev
+  application:
+    name: ck-bo
+
+logging:
+  level:
+    org:
+      springframework:
+        web: ERROR
+    hibernate: 
+      SQL: DEBUG
+      type: TRACE 
